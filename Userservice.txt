@@ -1,2 +1,3 @@
 get the user data from table.
-get info from the system
+get info from the system.
+PROCDESS THE DATA.
