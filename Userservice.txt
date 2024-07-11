@@ -1,3 +1,5 @@
 get the user data from table.
 get info from the system.
 PROCDESS THE DATA.
+--->
+print random echo
