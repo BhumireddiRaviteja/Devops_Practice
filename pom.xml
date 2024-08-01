@@ -4,13 +4,31 @@
 	<groupId>in.RAHAM</groupId>
 	<artifactId>NETFLIX</artifactId>
 	<packaging>war</packaging>
-	<version>1.2.2</version>
+	<version>3.3.1</version>
 	<name>Java Home myweb</name>
 	<url>http://maven.apache.org</url>
 	
 	<properties>
 		<docker.image.prefix>kammana</docker.image.prefix>
+		<maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
 	</properties>	
+	<build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.1</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+
+        </plugin>
+
+    </plugins>
+</build>
 	<dependencies>
 		<dependency>
 		    <groupId>com.oracle.bedrock</groupId>
